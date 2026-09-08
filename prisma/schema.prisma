@@ -22,8 +22,8 @@ model Vehiculo {
   anno          Int
   kilometraje   Decimal       @db.Decimal(10, 2)
   duenno        String
-  telefono      String
-  correo        String
+  telefono      String?
+  correo        String?
   observaciones Observacion[]
 }
 

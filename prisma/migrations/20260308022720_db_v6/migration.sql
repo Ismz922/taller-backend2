@@ -7,8 +7,8 @@ CREATE TABLE `Vehiculo` (
     `anno` INTEGER NOT NULL,
     `kilometraje` DECIMAL(10, 2) NOT NULL,
     `duenno` VARCHAR(191) NOT NULL,
-    `telefono` VARCHAR(191) NOT NULL,
-    `correo` VARCHAR(191) NOT NULL,
+    `telefono` VARCHAR(191) NULL,
+    `correo` VARCHAR(191) NULL,
 
     UNIQUE INDEX `Vehiculo_placa_key`(`placa`),
     PRIMARY KEY (`id`)
